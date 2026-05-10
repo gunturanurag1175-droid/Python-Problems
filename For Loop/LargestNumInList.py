@@ -1,0 +1,7 @@
+numbers = [4, 7, 2, 9, 21]
+
+largest = numbers[0]
+for num in numbers:
+    if num > largest:
+        largest = num
+print(largest)
