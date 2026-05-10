@@ -1,6 +1,6 @@
 print("Hello User! Wanna learn how to build a car? if yes, just say 'Start'. ")
 command = ""
-while command != "quit":
+while True:
     command = input("> ").lower()
     if command == "start":
         print("Car has started..")
