@@ -1,11 +1,20 @@
-print("Hello User! Wanna learn how to build a car? if yes, just say 'Start'. ")
+
 command = ""
+started = False
 while True:
     command = input("> ").lower()
     if command == "start":
-        print("Car has started..")
+        if started: 
+            print("Car had been already started")
+        else:
+            started = True
+            print("Car has started..")
     elif command == "stop":
-        print("Car has Stopped.")
+        if not started:
+            print("Car is already stopped.")
+        else: 
+            started = False
+            print("Car has Stopped.")
     elif command == "help":
         print("""Start - to start the car
 Stop - to stop the car
